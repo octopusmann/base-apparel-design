@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logo {
+  padding-top: 1.5em;
+  padding-bottom: 1.4em;
+}
+
+.woman-mobile {
+  width: 100%;
+}
+.woman-desktop {
+  display: none;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ce9898;
+  padding-top: 2.5em;
+}
+
+.texts h1 {
+  font-weight: 40;
+  color: #ce9898;
+  padding-bottom: 0.5em;
+}
+.texts .coming-soon {
+  font-weight: 600;
+  color: #423a3a;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #000000;
+}
+.paragraph-container {
+  max-width: 100%;
+}
+
+.paragraph {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+
+  padding-left: 1em;
+}
+.input-container .email {
+  width: 19.4em;
+  height: 3.3em;
+  color: #ce9898;
+  border: 1px solid #ce9898;
+  border-radius: 25px;
+}
+.input-container .email::placeholder {
+  padding-left: 1.5em;
+  color: #ce9898;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input-container .arrow-image {
+  margin-left: -3.5em;
+  padding-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    padding-left: 10em;
+  }
+  .woman-mobile {
+    display: none;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  .woman-desktop {
+    display: block;
+    height: 100vh;
+  }
+
+  .texts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: 12em;
+    margin-bottom: 9em;
+  }
+  .texts h1 {
+    font-size: 5.5em;
+    letter-spacing: 15px;
+  }
+  .texts .coming-soon {
+    margin-left: 1.5em;
+  }
+  .paragraph {
+    white-space: pre-line;
+    font-size: 1em;
+    margin-left: 3em;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 23em;
+  }
+}
